@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Create mapping and add sample data
+elasticdump --input=./index/analyzer.json --output=http://localhost:9200/library --type=analyzer --headers='{"Content-Type": "application/json"}'
+elasticdump --input=./index/mapping.json --output=http://localhost:9200/library --type=mapping --headers='{"Content-Type": "application/json"}'
+elasticdump --input=./index/data.json --output=http://localhost:9200/library --type=data --headers='{"Content-Type": "application/json"}'
+
+# Open Kibana
+open 'http://localhost:5601/app/kibana#/dev_tools/console?_g=()'

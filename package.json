@@ -1,0 +1,14 @@
+{
+  "name": "elasticsearch-didyoumean",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "docker-compose up -d && echo \"Waiting for Elasticsearch to be running\" && sleep 10 && ./init"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "elasticdump": "^4.4.0"
+  }
+}

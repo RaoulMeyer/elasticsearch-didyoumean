@@ -1,0 +1,25 @@
+{
+  "library": {
+    "mappings": {
+      "book": {
+        "properties": {
+          "author": {
+            "type": "keyword"
+          },
+          "title": {
+            "type": "text",
+            "fields": {
+              "shingle": {
+                "type": "text",
+                "analyzer": "shingles"
+              }
+            }
+          },
+          "year": {
+            "type": "integer"
+          }
+        }
+      }
+    }
+  }
+}

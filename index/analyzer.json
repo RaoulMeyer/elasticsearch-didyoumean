@@ -1,0 +1,1 @@
+"{\"library\": {\"settings\": {\"index\": {\"provided_name\": \"library\",\"analysis\": {\"filter\": {\"shingle_filter\": {\"max_shingle_size\": \"3\",\"min_shingle_size\": \"2\",\"type\": \"shingle\"}},\"analyzer\": {\"shingles\": {\"filter\": [\"lowercase\",\"shingle_filter\"],\"type\": \"custom\",\"tokenizer\": \"standard\"}}}}}}}"
